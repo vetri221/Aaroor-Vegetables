@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f9f4;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #2d6a4f;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+#searchBar {
+  width: 90%;
+  margin: 15px auto;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #2d6a4f;
+  border-radius: 6px;
+}
+.shop {
+  margin: 20px auto;
+  padding: 15px;
+  width: 95%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.table-container {
+  overflow-x: auto; /* Makes table scrollable on small screens */
+}
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  min-width: 600px; /* Prevents squishing on desktop */
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+th {
+  background: #40916c;
+  color: white;
+}
+h2 {
+  color: #1b4332;
+  font-size: 18px;
+}
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  th, td {
+    font-size: 12px;
+    padding: 6px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #searchBar {
+    font-size: 14px;
+    padding: 8px;
+  }
+  th, td {
+    font-size: 11px;
+    padding: 5px;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
